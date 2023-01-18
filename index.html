@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Encriptador - Challenge</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <script src="encriptador.js"></script>
+
+    <body>
+        <header>
+            <img src="imagenes/Logo.png" alt="Logo Alura"> 
+        </header>
+
+        <main>
+            <section>
+                <textarea cols="50" rows="10" id="textoingresado" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div>
+                    <h6 class="informacion"> &#10022;Solo letras minúsculas y sin acentos</h6>
+                </div>
+
+                <div>
+                    <button onclick="encriptar()" id="botonencriptar">Encriptar</button>
+                    <button onclick="desencriptar()" id="botondesencriptar">Desencriptar</button>
+                </div>
+            </section>
+                  
+            <section>
+                <div >
+                    <textarea id="areaMostrar" cols="50" rows="10"></textarea>
+                </div>
+    
+                <div id="mensajesNo">
+                    <h2 id="mensajeNoEncontrado">Ningun mensaje fue encontrado</h2>
+                    <p id="mensajeNoEncontrado2">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+    
+                <div id="imagen">
+                        
+                </div>
+
+                <div>
+                    <button onclick="copiar()" id="botoncopiar">Copiar</button> 
+                </div>
+            </section>            
+        </main>
+
+        <footer>
+          
+        </footer>
+
+    </body>
+</html>
